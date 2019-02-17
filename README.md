@@ -6,3 +6,5 @@ I trained this classifier for face translation, but found a trained classifier w
 This repo shares same common resources with my face vae repo, refer that repo to run this code and some specified path in this code need to updated.
 
 There are some test pictures in "test pictures" directory.
+
+gender_classifier.py is not transfer learning, just FYI.
