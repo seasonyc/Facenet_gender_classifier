@@ -110,12 +110,11 @@ def test(classifier, image_file_name):
     show_image(image)
     print(label)
 
-'''
+
 classifier = train(0.0005)
 save_model(classifier, 'gender-classifier' + str(time.time()))
 
 
-#classifier = load_model('gender-classifier0002-loss0.090-acc0.966-val_loss0.063-val_acc0.976.h5')
 
 test_classifier(classifier)
 
@@ -145,9 +144,3 @@ test(classifier, 'test_attr_trans_from_CelebA/fbb.jpg')
 test(classifier, 'test_attr_trans_from_CelebA/lc.jpg')
 test(classifier, 'test_attr_trans_from_CelebA/jt.jpg')
 test(classifier, 'test_attr_trans_from_CelebA/mnls.jpg')
-'''
-classifier = load_model('gender-classifier')
-test(classifier, 'test_attr_trans_from_CelebA/to1.jpg')
-test(classifier, 'test_attr_trans_from_CelebA/tt1.jpg')
-test(classifier, 'test_attr_trans_from_CelebA/to3.jpg')
-test(classifier, 'test_attr_trans_from_CelebA/tt3.jpg')
